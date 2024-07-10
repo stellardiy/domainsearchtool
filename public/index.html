@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Search Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Domain Search Tool</h1>
+    </header>
+    <main>
+        <section id="search-section">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Enter domain keyword">
+                <button type="submit">Search</button>
+            </form>
+            <div id="advanced-options">
+                <h3>Advanced Options</h3>
+                <label><input type="checkbox" id="exact-match"> Exact Match</label>
+                <label><input type="checkbox" id="include-tlds"> Include TLDs</label>
+                <select id="domain-status">
+                    <option value="all">All Statuses</option>
+                    <option value="active">Active</option>
+                    <option value="expired">Expired</option>
+                </select>
+            </div>
+        </section>
+        <section id="results-section">
+            <h2>Search Results</h2>
+            <div id="results-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Domain Search Tool. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
